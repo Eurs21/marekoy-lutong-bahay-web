@@ -10,23 +10,14 @@ function App() {
     <div className="min-h-screen bg-[#FDFBF7]">
       {/* Navigation */}
       <nav className="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        {/* Navigation */}
-<nav className="p-6 flex justify-between items-center max-w-7xl mx-auto">
-  <div className="flex items-center">
-    {/* Swapping the text for the actual logo image */}
-    <img 
-      src="/marekoy-logo.png" 
-      alt="Marekoy Logo" 
-      className="h-12 w-auto object-contain" // Height of 12 (48px) keeps it neat in the nav bar
-    />
-  </div>
-  
-  <div className="hidden md:flex gap-8 font-medium text-[#2D1E17]">
-    <a href="#menu" className="hover:text-[#2D5A27]">Menu</a>
-    <a href="#about" className="hover:text-[#2D5A27]">Our Story</a>
-    <a href="#catering" className="hover:text-[#2D5A27]">Catering</a>
-  </div>
-</nav>
+        <div className="text-2xl font-serif font-bold text-[#2D1E17]">
+          Marekoy <span className="text-[#2D5A27]">Lutong Bahay</span>
+        </div>
+        <div className="hidden md:flex gap-8 font-medium text-[#2D1E17]">
+          <a href="#menu" className="hover:text-[#2D5A27]">Menu</a>
+          <a href="#about" className="hover:text-[#2D5A27]">Our Story</a>
+          <a href="#catering" className="hover:text-[#2D5A27]">Catering</a>
+        </div>
       </nav>
 
       <main>
