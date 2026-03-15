@@ -12,7 +12,7 @@ const Hero = () => {
           {/* 2. Place the logo here, giving it a good size and alignment */}
           <div className="flex items-center gap-4">
             <img 
-              src={marekoyLogo} 
+              src={marekoyLogo}
               alt="Marekoy Lutong Bahay Logo" 
               className="h-24 w-24 object-contain" // Size looks balanced here
             />
