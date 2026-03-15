@@ -1,27 +1,17 @@
 import React from 'react';
 import { Phone, Utensils } from 'lucide-react';
-import marekoyLogo from '../assets/marekoy-logo.png'; // 1. Import the logo from assets
 
 const Hero = () => {
   return (
     <section className="relative bg-[#FDFBF7] min-h-[80vh] flex items-center px-6 lg:px-20 font-sans">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        {/* Left Side: Branding */}
+        {/* Left Side: Branding and Text */}
         <div className="space-y-6">
-          
-          {/* 2. Place the logo here, giving it a good size and alignment */}
-          <div className="flex items-center gap-4">
-            <img 
-              src={marekoyLogo}
-              alt="Marekoy Lutong Bahay Logo" 
-              className="h-24 w-24 object-contain" // Size looks balanced here
-            />
-            <div className='flex flex-col'>
-                <span className="text-[#2D5A27] font-semibold tracking-widest uppercase text-sm">
-                    Authentic Nasugbu Flavors
-                </span>
-                <span className='text-xs text-gray-400'>Since 2015</span> {/* Reference from the logo itself! */}
-            </div>
+          <div className='flex flex-col'>
+              <span className="text-[#2D5A27] font-semibold tracking-widest uppercase text-sm">
+                  Authentic Nasugbu Flavors
+              </span>
+              <span className='text-xs text-gray-400'>Since 2015</span>
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-serif text-[#2D1E17] leading-tight pt-2">
@@ -45,12 +35,13 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Side: Visuals (The food image stays) */}
-        <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+        {/* Right Side: The Specific Marekoy Logo */}
+        <div className="relative flex justify-center items-center p-8 rounded-2xl">
+          {/* 1. Point the src to the logo image in the public folder */}
           <img 
-            src="https://images.unsplash.com/photo-1547514701-42782101795e?q=80&w=1974&auto=format&fit=crop" 
-            alt="Delicious Filipino Food" 
-            className="w-full h-full object-cover"
+            src="/marekoy-logo.png" 
+            alt="Marekoy Lutong Bahay Logo" 
+            className="w-full max-w-md h-auto object-contain" // 2. Scale it down to look appropriate in the space
           />
         </div>
       </div>
