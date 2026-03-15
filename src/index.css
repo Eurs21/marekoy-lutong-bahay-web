@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Keep your custom fonts below it */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;700&display=swap');
+
+:root {
+  --font-heritage: 'Playfair Display', serif;
+  --font-clean: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #FDFBF7; /* Cream Haze */
+  color: #2D1E17;           /* Kapeng Barako */
+}
